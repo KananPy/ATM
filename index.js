@@ -35,10 +35,6 @@ function BankAcount(balance = []){
         
         input.value = ''
         console.log('balance',balance)
-    
-        
-        
-        
         
     }
 
@@ -48,8 +44,7 @@ function BankAcount(balance = []){
         showAlert("alert-success", `Your have ${balance}$ in your account`)
         
     }
-    
-    
+       
     this.removeBalance =function(){
         this.minus = +input.value
         if(!this.minus){
@@ -70,11 +65,6 @@ function BankAcount(balance = []){
 
         
     }
-    
-    
-
-
-
 
 }
 
