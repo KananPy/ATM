@@ -56,7 +56,7 @@ function BankAcount(balance = []){
             return
         }
         if((balance - this.minus) < 0){
-            showAlert("alert-danger", "You don't have enough money in your bank account")
+            showAlert("alert-danger", `You can't withdraw more than ${balance}$`)
             return
         }
         balance = balance - this.minus
