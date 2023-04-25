@@ -27,8 +27,8 @@ function BankAcount(balance = []){
     this.addBalance = function(){
         this.chashIn = +input.value
         balance += this.chashIn
-        if(!this.chashIn){
-            showAlert("alert-danger", "Please write the amount")
+        if(!this.chashIn || this.chashIn < 0){
+            showAlert("alert-danger", "Please write the correct amount of money")
             return
         }
         showAlert("alert-success", "Your balance has been updated")
@@ -47,8 +47,8 @@ function BankAcount(balance = []){
        
     this.removeBalance =function(){
         this.minus = +input.value
-        if(!this.minus){
-            showAlert("alert-danger", "Please write the amount")
+        if(!this.minus || this.minus < 0){
+            showAlert("alert-danger", "Please write the correct amount of money")
             return
         }
         if(balance === 0 ){
